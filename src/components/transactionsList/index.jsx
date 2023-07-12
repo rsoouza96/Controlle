@@ -1,8 +1,8 @@
-import { useState } from "react"
-import { transactions as transactionsDB } from "../../../db"
-import { useSelector } from "react-redux";
-import { StyledCard, StyledCardHeader, StyledMain, StyledTagsContainer, StyledType } from "./style";
-import currencyFormater from "../../utils/currencyFormater";
+import { useState } from 'react'
+import { transactions as transactionsDB } from '../../../db'
+import { useSelector } from 'react-redux'
+import { StyledCard, StyledCardHeader, StyledMain, StyledTagsContainer, StyledType } from './style'
+import currencyFormater from '../../utils/currencyFormater'
 
 const TransactionsList = () => {
     const [transactions] = useState(transactionsDB)

@@ -16,7 +16,7 @@ const ValueFilter = () => {
             <StyledSlider
                 size="small"
                 value={[dinamicValues.minValue, dinamicValues.maxValue]}
-                onChangeCommitted={handleChange}
+                onChange={handleChange}
                 step={10}
                 min={fixedValues.minValue}
                 max={fixedValues.maxValue}

@@ -1,6 +1,6 @@
-import { accounts, costCenter, creditCard, tags, users } from "../../../db"
-import MultipleSelection from "../multipleSelection"
-import ValueFilter from "../valueFilter"
+import { accounts, costCenter, creditCard, tags, users } from '../../../db'
+import MultipleSelection from '../multipleSelection'
+import ValueFilter from '../valueFilter'
 
 const SelectedCategoryFilters = ({ selectedFilters, removeSelectedItem }) => (
     selectedFilters.map(({name, id}) => {

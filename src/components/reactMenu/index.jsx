@@ -1,6 +1,4 @@
-// import '@szhsin/react-menu/dist/transitions/slide.css'
 import { Menu, MenuItem } from '@szhsin/react-menu'
-// import '@szhsin/react-menu/dist/index.css'
 import { StyledButton } from './style'
 
 const ReactMenu = ({ items, selectedFilters, getItemProps }) => {

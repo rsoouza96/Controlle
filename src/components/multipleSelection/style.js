@@ -33,6 +33,25 @@ export const StyledDiv = styled.div `
     cursor: pointer;
     
     span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 5px;
+        font-size: 13px;
+    }
+`
+export const StyledOption = styled.div `
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0 5px;
+    font-size: 13px;
+
+    p { 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 5px;
         font-size: 13px;
     }
 `

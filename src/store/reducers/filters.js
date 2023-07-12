@@ -1,4 +1,4 @@
-import { transactions } from "../../../db"
+import { transactions } from '../../../db'
 
 const minValueCheck = transactions.reduce((a,b) => {
     if(b.value < a.value) a = b;
@@ -14,7 +14,7 @@ const maxValueCheck = transactions.reduce((a,b) => {
 const defaultState = {
     filters: {
         tags: [],
-        type: "All",
+        type: 'All',
         bankAccount: [],
         creditCard: [],
         user: [],
@@ -26,11 +26,11 @@ const defaultState = {
 
 const filters = (state = defaultState, { type, name, filter, minValue, maxValue }) => {
     switch(type) {
-        case "CLEAR_ALL_FILTERS":
+        case 'CLEAR_ALL_FILTERS':
             return {
                 filters: {
                     tags: [],
-                    type: "All",
+                    type: 'All',
                     bankAccount: [],
                     creditCard: [],
                     user: [],
@@ -40,7 +40,7 @@ const filters = (state = defaultState, { type, name, filter, minValue, maxValue 
                 }
             }
 
-        case "ADD_FILTER":
+        case 'ADD_FILTER':
             return {
                 filters: {
                     ...state.filters,
@@ -48,7 +48,7 @@ const filters = (state = defaultState, { type, name, filter, minValue, maxValue 
                 }
             }
         
-        case "TYPE_FILTER":
+        case 'TYPE_FILTER':
             return {
                 filters: {
                     ...state.filters,
@@ -56,7 +56,7 @@ const filters = (state = defaultState, { type, name, filter, minValue, maxValue 
                 }
             }
         
-            case "VALUE_FILTER":
+            case 'VALUE_FILTER':
                 return {
                     filters: {
                         ...state.filters,
@@ -64,7 +64,7 @@ const filters = (state = defaultState, { type, name, filter, minValue, maxValue 
                     }
                 }
 
-        case "REMOVE_FILTER":
+        case 'REMOVE_FILTER':
             return {
                 filters: {
                     ...state.filters,

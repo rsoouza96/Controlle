@@ -1,9 +1,9 @@
-import { ControlledMenu, MenuItem, useClick } from '@szhsin/react-menu';
-import { useRef, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import '@szhsin/react-menu/dist/index.css';
+import { ControlledMenu, MenuItem, useClick } from '@szhsin/react-menu'
+import { useRef, useState } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import '@szhsin/react-menu/dist/index.css'
 import { typeFilter } from '../../store/actions'
-import { StyledButton, StyledLabel } from './style';
+import { StyledButton, StyledLabel } from './style'
 
 const TypeFilter = () => {
     const dispatch = useDispatch()

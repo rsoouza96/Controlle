@@ -4,7 +4,7 @@ import { GlobalStyles } from './globalStyles'
 
 function App() {
     return (
-        <>  
+        <>
             <GlobalStyles />
             <FiltersContainer />      
             <TransactionsList />
